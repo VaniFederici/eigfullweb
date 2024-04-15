@@ -352,6 +352,7 @@ a:hover {
   color: black;
   font-family: "gotham-bold";
   margin-top: 10px;
+  text-align: center;
 }
 .card p {
   text-align: center;
@@ -651,6 +652,7 @@ footer img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 .link-footer {
   background-color: #0069ff;
@@ -975,6 +977,10 @@ footer img {
     color: white;
   }
   /*carousel*/
+  .slider-section {
+    padding: 25px;
+    margin: 0;
+}
   .slider-section h1 {
     font-size: 3rem;
   }
@@ -991,6 +997,7 @@ footer img {
   }
   .card {
     width: 60%;
+    height: 463px;
   }
 
   .card-image {
@@ -999,10 +1006,14 @@ footer img {
   }
   .card p {
     padding: 0;
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
+  .find {
+    padding: 38px;
+  }
+
   .find p {
     padding: 0px;
   }
@@ -1020,8 +1031,18 @@ footer img {
   .quote-form__section input {
     width: 350px;
   }
+  .quote-form__section {
+    padding: 0px 15px;
+    height: 80vh;
+  }
+  .quote-form__section h4 {
+    text-align: center;
+  }
   .quote-form__section label {
     font-size: 1rem;
+  }
+  .companie-text {
+    margin-left: 0px
   }
   .companie-section {
     padding: 90px 20px;
@@ -1036,10 +1057,13 @@ footer img {
   }
   .companie-text h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
   .companie-text p {
     text-align: center;
+  }
+  .companie-items img {
+    width: 100%;
   }
   .win-section {
     padding-top: 75px;
@@ -1051,6 +1075,10 @@ footer img {
   .data-footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .data-footer p {
+    text-align: center;
   }
   .data-footer div {
     margin: 0px 10px;
@@ -1059,6 +1087,12 @@ footer img {
   footer img {
     width: 25%;
     margin-bottom: 10px;
+  }
+  .link-footer {
+    width: 100px;
+  }
+  .quote {
+    width: 106px;
   }
   .button-footer {
     height: 133px;
