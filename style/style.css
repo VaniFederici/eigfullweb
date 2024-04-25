@@ -43,7 +43,50 @@ header {
   top: 0px;
   z-index: 1000;
 }
-.broker-main {
+
+/*main-carousel_section*/
+.carousel-main {
+  margin-top: 50px;
+}
+.index-1 {
+  height: 939px;
+  background-image: url(../assets/img-index1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit:cover ;
+}
+.index-2 {
+  height: 939px;
+  background-image: url(../assets/img-index2.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit:cover ;
+}
+.index-3 {
+  height: 939px;
+  background-image: url(../assets/img-index3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+.slogan-index {
+  color: white;
+    position: relative;
+    top: 9.3rem;
+    left: 22rem;
+    width: 500px;
+    font-size: 1.5rem;
+    z-index: 100
+}
+.slogan-index h1 {
+  font-size: 4rem;
+  font-family: "gotham-bold";
+}
+ /*landing-quote__section*/
+.index-main {
   background-image: url(../assets/index.png);
   background-position: end;
   background-size: cover;
@@ -86,7 +129,6 @@ header {
   letter-spacing: 0px;
   text-align: center;
   padding: 8px 15px;
-  width: 138px;
   border-radius: 25px;
   text-decoration: none;
 }
@@ -174,6 +216,7 @@ a:hover {
 .label-container {
   display: flex;
   justify-content: space-evenly;
+  margin: 10px 0px;
 }
 .label-container input {
   width: 400px;
@@ -187,18 +230,14 @@ a:hover {
   color: white;
 }
 .form-container {
-  display: flex;
-  width: 75%;
-  align-items: center;
-  margin-top: 100px;
+  width: 50%;
 }
 .form-container p {
-  font-family: "gotham-bold";
+  font-family: "gotham-book";
   font-weight: bold;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
-  margin-right: 60px;
 }
 .refered-container {
   display: flex;
@@ -235,7 +274,7 @@ a:hover {
   margin-top: 30px;
 }
 
-.mailing span {
+.mailing spam {
   color: white;
   margin-left: 2px;
   position: relative;
@@ -295,7 +334,6 @@ a:hover {
   text-align: center;
   font-size: 3rem;
 }
-
 /*slider*/
 .slider-section {
   padding: 30px;
@@ -322,8 +360,8 @@ a:hover {
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  width: 4rem;
-  height: 7rem;
+  width: 2rem;
+  height: 4rem;
 }
 .carousel-control-next-icon {
   background-image: url(../assets/chevron.righ.png);
@@ -377,6 +415,14 @@ a:hover {
   outline: none;
   border: none;
   margin: 15px;
+}
+.slider-quote a {
+  color: white;
+  text-decoration: none;
+  font-family: "gotham-bold";
+}
+.slider-quote a:hover {
+  color: black!important;
 }
 
 /* win-section */
@@ -529,7 +575,9 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-
+.map-container img {
+  width: 980px;
+}
 /*form-quote section*/
 .quote-form__section {
   background-color: black;
@@ -567,12 +615,45 @@ label {
   font-size: 1.5rem;
   font-family: "gotham-bold";
 }
+/*difference*/
+.difference {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0069ff;
+  padding: 120px 30px;
+  height: 90vh;
+}
+.difference-text {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+.difference-text img {
+  width: 660px;
+}
+.difference p {
+  margin-bottom: 0px;
+  font-size: 1.6rem; 
+  color: white;
+  width: 70%;
+  padding: 10px 90px;
+}
+.difference h2 {
+  font-size: 3.5rem;
+  font-family: "gotham-bold";
+  z-index:2;
+  color: #0068fc;
+}
+
 
 /*companie-section*/
 .companie-section {
   color: white;
   background-color: #919191;
-  padding: 120px 20px;
+  padding: 65px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -599,7 +680,7 @@ label {
   width: 70%;
 }
 .companie-items img {
-  width: 70%;
+  width: 60%;
 }
 .companie-text h2 {
   font-size: 3.3rem;
@@ -624,7 +705,9 @@ label {
   font-family: "gotham-bold";
   margin-top: 50px;
 }
-
+.companie-button a {
+  text-decoration: none;
+}
 /*contact section*/
 .contact-section {
   background-color: #0068fc;
@@ -637,6 +720,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   color: white;
+  border-top: 1px solid #393939;
 }
 footer img {
   width: 10%;
@@ -672,20 +756,44 @@ footer img {
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .navbar-expand-lg .navbar-collapse {
-    width: 100%;
+    width: 113%;
     justify-content: space-around;
   }
-  .slogan-container {
-    top: 11.5rem;
-    left: 15.5rem;
-  }
 
+  /*index*/
+  .slogan-index {
+    top: 6.3rem;
+    left: 15rem;
+    font-size: 1.3rem;
+  }
+  .slogan-index h1 {
+    font-size: 3rem;
+  }
+  .slogan-container {
+    top: 6.5rem;
+    left: 13.5rem;
+  }
   .slogan-container {
     font-size: 1.2rem;
   }
 
   .form-container {
     width: 65%;
+  }
+
+  .form-container {
+    width: 65%;
+  }
+  .label-container label {
+    font-size: 1.3rem;
+  }
+  .label-container input  {
+    width: 384px;
+    height: 39px;
+    margin: 10px 6px
+  }
+  .refered-container input {
+    height: 39px;
   }
   .slider-section {
     margin-top: 80px;
@@ -714,14 +822,23 @@ footer img {
     text-align: center;
   }
   .carousel-control-prev-icon {
-    width: 3rem;
-    height: 6rem;
+    width: 2rem;
+    height: 4rem;
   }
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
-    width: 3rem;
-    height: 6rem;
+    width: 2rem;
+    height: 4rem;
   }
+  /*difference*/
+  .difference-text {
+    flex-direction: column;
+  }
+  .difference-text p {
+    padding: 12px 0px;
+    font-size: 1.3rem ;  }
+  /*testimonials*/
+
   .win-section {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -730,14 +847,23 @@ footer img {
   .win-section .card-wrapper {
     height: 557px;
   }
+  .companie-section {
+    padding: 54px 20px;
+  }
   .companie-items {
     gap: 15px;
     width: 50%;
   }
-  .companie-text h2 {
-    font-size: 3rem;
+  .companie-items img {
+    width: 60%;
   }
-  .companie-button {
+  .companie-text {
+    margin-left: 65px;
+  }
+  .companie-text h2 {
+    font-size: 2.5rem;
+  }
+  .companie-buttremon {
     margin-top: 25px;
   }
   .nav-link {
@@ -748,15 +874,47 @@ footer img {
     width: 120px;
   }
   .logo {
-    width: 90%;
+    width: 84%;
+  }
+  .carousel-main {
+    margin-top:66px;
+  }
+  .index-1 {
+    background-image: url(../assets/img-index1-tablet.png);
+    background-position: bottom;
+    height: 680px;
+  }
+  .index-2 {
+    background-image: url(../assets/img-index2-tablet.png);
+    background-size: cover;
+    height: 680px;
+  }
+  .index-3 {
+    background-image: url(../assets/img-index-tablet-3.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 680px;
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+   header {
+    padding: 10px 0px ;
+   }
+   .logo {
+    width: 280px
+   }
+   .nav-link {
+    font-size: 0.9rem;
+   }
+   .quote {
+    font-size: 0.9rem;
+    width: 93px;
+   }
   .slogan-container {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     width: 450px;
-    top: 5rem;
+    top: 10rem;
     left: 13.5rem;
   }
   .slogan-container h1 {
@@ -795,9 +953,86 @@ footer img {
     flex-direction: column;
     align-items: center;
   }
+  .carousel-main {
+    margin-top: 80px;
+  }
+  .index-1 {
+    background-image: url(../assets/img-index-ipad-1.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 585px;
+  }
+  .index-2 {
+    background-image: url(../assets/img-index-ipad-2.png);
+    background-size: cover;
+    background-position: center;
+    height: 585px;
+  }
+  .index-3 {
+    background-image: url(../assets/img-index-ipad-3.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 585px;
+  }
+  .slogan-index h1 {
+    font-size: 2.8rem;
+  }
+  .slogan-index p {
+    font-size: 1rem;
+  }
+  .slogan-index {
+    top: 4.3rem;
+    left: 16rem;
+  }
+  /*difference*/
+  .difference-text {
+    flex-direction: column;
+  }
+  .difference-text p {
+    padding: 12px 0px;
+    font-size: 1.3rem ;  }
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .nav-link {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    width: 100%;
+  }
+  .carousel-main {
+    margin-top: 50px;
+}
+  .index-1 {
+    background-image: url(../assets/img-index-ipad-b1.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 585px;
+  }
+  .index-2 {
+    background-image: url(../assets/img-index-ipad-b2.png);
+    background-size: cover;
+    background-position: center;
+    height: 585px;
+  }
+  .index-3 {
+    background-image: url(../assets/img-index-ipad-b3.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 585px;
+  }
+  .slogan-index h1 {
+    font-size: 2.8rem;
+  }
+  .slogan-index p {
+    font-size: 1rem;
+  }
+  .slogan-index {
+    top: 4.3rem;
+    left: 12rem;
+  }
+  
   .slogan-container h1 {
     font-size: 2.3rem;
   }
@@ -807,6 +1042,13 @@ footer img {
     top: 6.8rem;
     left: 15.6rem;
   }
+/*difference*/
+.difference-text {
+  flex-direction: column;
+}
+.difference-text p {
+  padding: 12px 0px;
+  font-size: 1.2rem ;  }
 
   .label-container {
     justify-content: center;
@@ -861,14 +1103,71 @@ footer img {
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 991px) {
+@media only screen and (min-width: 600px) and (max-width: 991px) {
+  
+  .carousel-main {
+    margin-top: 99px;
+}
+  .index-1 {
+    background-image: url(../assets/img-index-mobile-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+  }
+  .index-2 {
+    background-image:url(../assets/img-index-mobile-2.png);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+  }
+  
+  .index-3 {
+    background-image: url(../assets/img-index-mobile-3.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 750px;
+  }
+  
+  .slogan-index {
+    width: 300px;
+    top: 17.3rem;
+    left: 14rem;
+    }
+    
+  
+  .slogan-index h1 {
+    font-size: 1.8rem;
+  }
+  .slogan-index p {
+    font-size: 1rem;
+  }
+  
+  
   .mobile-quote {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .broker-main {
+  /*difference*/
+  .difference {
+    margin-left: 0;
+  }
+  .difference-text {
+    margin-left: 0px;
+  }
+  .difference-text img {
+    width: 450px;
+}
+  .difference-text {
+    flex-direction: column;
+  }
+  .difference-text p {
+    padding: 12px 0px;
+    font-size: 1rem ;  }
+  /*landing-quote__section*/
+
+  .index-main {
     background-image: url(../assets/mobile.png);
     background-position: center center;
     height: 60vh;
@@ -933,8 +1232,9 @@ footer img {
     padding: 10px;
   }
   .form-container {
-    width: 133%;
+    width: 100%;
     padding: 5px;
+    flex-direction: column;
   }
   .quote-tip {
     padding: 5px;
@@ -1101,8 +1401,85 @@ footer img {
     justify-content: space-around;
   }
 }
-@media only screen and (min-width: 300px) and (max-width: 795px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .carousel-main {
+    margin-top: 100px;
+}
+  .index-1 {
+    background-image: url(../assets/img-index-minimobile-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+  }
+  .index-2 {
+    background-image: url(../assets/img-index-minimobile-2.png);
+    background-size: cover;
+    background-position: center;
+    height: 750px;
+  }
+  
+  .index-3 {
+    background-image: url(../assets/img-index-minimobile-3.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 750px;
+  }
+  
+    .slogan-index {
+    width: 300px;
+    top: 15rem;
+    left: 5rem;
+}
+  .slogan-index h1 {
+    font-size: 1.8rem;
+  }
+  .slogan-index p {
+    font-size: 1rem;
+  }
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 1rem;
+  height: 2rem;
+}
+/*difference*/
+
+  /*difference*/
+  .difference {
+    margin-left: 0;
+    padding: 98px 0px
+  }
+  .difference-text {
+    margin-left: 0px;
+  }
+  .difference-text img {
+    width: 320px;
+}
+  .difference-text {
+    flex-direction: column;
+  }
+  .difference-text p {
+    padding: 12px 0px;
+    font-size: 1rem ;  }
+
   .agent-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .map-container img {
+    width: 100%;
+  }
+  .quote-form__section input {
+    width: 310px;
+  }
+}
+  
+.prueba {
+  background-image: url(../assets/prueba-1.png);
+  background-position: bottom;
+  background-repeat: no-repeat; 
+  height: 900px;
+}
+.borrador {
+  width: 90%;
+  position: relative;
+  bottom: -100px;
+  left:83px
 }
