@@ -1306,7 +1306,7 @@ footer img {
   }
   .card p {
     padding: 0;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
   }
@@ -1363,7 +1363,7 @@ footer img {
     text-align: center;
   }
   .companie-items img {
-    width: 100%;
+    width: 70%;
   }
   .win-section {
     padding-top: 75px;
@@ -1534,17 +1534,95 @@ footer img {
 footer .quote {
   width: 138px;
 }
+/*agents*/
+.index-main {
+  background-image: url(../assets/agent-mobile.png);
+  background-position: center center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.slogan-container {
+  top: 4.3rem;
+  left: -5rem;
+  width: 314px;
+  font-size: 0.9rem;
+  z-index: 100;
+}
+.slogan-container h1 {
+  font-size: 2rem;
+  
+}
+.first-quote {
+  padding: 10px;
+}
+.form-container p {
+  font-size: 1.3rem;
+}
+.quote-tips_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+}
+.form-container {
+  width: 100%;
+  padding: 5px;
+  flex-direction: column;
+}
+.label-container input {
+  width: 90%;
+  height: 28px;
+  margin: 0px 10px;
+}
+.refered-container input {
+  width: 320px;
+  height: 28px;
+}
+.label-container label {
+  font-size: 1.2rem;
+}
+.input-container label {
+  font-size: 1.2rem;
+}
+.form-container p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+footer {
+  flex-direction: column;
+  align-items: center;
+}
+.data-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.data-footer p {
+  text-align: center;
+}
+.data-footer div {
+  margin: 0px 10px;
+}
+
+footer img {
+  width: 25%;
+  margin-bottom: 10px;
+}
+.link-footer {
+  width: 100px;
+}
+.quote {
+  width: 106px;
+}
+.button-footer {
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 }
   
-.prueba {
-  background-image: url(../assets/prueba-1.png);
-  background-position: bottom;
-  background-repeat: no-repeat; 
-  height: 900px;
-}
-.borrador {
-  width: 90%;
-  position: relative;
-  bottom: -100px;
-  left:83px
-}
