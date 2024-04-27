@@ -84,6 +84,12 @@ header {
 .slogan-index h1 {
   font-size: 4rem;
   font-family: "gotham-bold";
+  text-shadow: 1px 3px 0px rgba(0,0,0,0.5);
+
+}
+.slogan-index p {
+  font-family: "gotham-bold";
+  text-shadow: 1px 3px 0px rgba(0,0,0,0.5);
 }
  /*landing-quote__section*/
 .index-main {
@@ -730,6 +736,7 @@ footer img {
 }
 .data-footer i {
   margin: 0px 10px;
+  color: #0068fc;
 }
 .button-footer {
   height: 120px;
@@ -831,12 +838,14 @@ footer img {
     height: 4rem;
   }
   /*difference*/
-  .difference-text {
-    flex-direction: column;
+  .difference-text img {
+    width: 600px;
   }
   .difference-text p {
     padding: 12px 0px;
-    font-size: 1.3rem ;  }
+    font-size: 1.3rem ;
+    margin-left: 50px;
+  }
   /*testimonials*/
 
   .win-section {
@@ -1131,7 +1140,7 @@ footer img {
   .slogan-index {
     width: 300px;
     top: 17.3rem;
-    left: 14rem;
+    left: 8rem;
     }
     
   
@@ -1612,9 +1621,7 @@ footer img {
   width: 25%;
   margin-bottom: 10px;
 }
-.link-footer {
-  width: 100px;
-}
+
 .quote {
   width: 106px;
 }
