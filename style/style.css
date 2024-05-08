@@ -105,7 +105,7 @@ header {
   width: 83%;
 }
 .logo {
-  width: 70%;
+  width: 90%;
 }
 .menu-nav {
   width: 90%;
@@ -134,9 +134,10 @@ header {
   color: black;
   letter-spacing: 0px;
   text-align: center;
-  padding: 8px 15px;
+  padding: 6px 15px;
   border-radius: 25px;
   text-decoration: none;
+  font-size: 13px;
 }
 .quote :hover {
   color: #0068fc;
@@ -346,7 +347,7 @@ a:hover {
   margin: 4rem 0;
 }
 .slider-section h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: black;
   font-family: "gotham-bold";
   text-align: center;
@@ -551,6 +552,11 @@ a:hover {
   font-family: "gotham-book";
   margin-bottom: 50px;
 }
+.hour-container p{
+  font-weight: bolder;
+    font-size: 15px;
+    margin-top: 57px;
+}
 .agent-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -638,11 +644,11 @@ label {
   align-items: center;  
 }
 .difference-text img {
-  width: 660px;
+  width: 575px;
 }
 .difference p {
   margin-bottom: 0px;
-  font-size: 1.6rem; 
+  font-size: 1.5rem; 
   color: white;
   width: 70%;
   padding: 10px 90px;
@@ -689,7 +695,7 @@ label {
   width: 60%;
 }
 .companie-text h2 {
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-family: "gotham-bold";
 }
 
@@ -721,15 +727,15 @@ label {
 
 footer {
   background-color: black;
-  padding: 30px 0px;
+  padding: 30px 87px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: white;
   border-top: 1px solid #393939;
 }
 footer img {
-  width: 10%;
+  width: 8%;
 }
 .data-footer div {
   display: flex;
@@ -764,9 +770,11 @@ footer img {
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .navbar-expand-lg .navbar-collapse {
     width: 113%;
-    justify-content: space-around;
+    justify-content: end;
   }
-
+.logo {
+  width: 100%;
+}
   /*index*/
   .slogan-index {
     top: 6.3rem;
@@ -806,7 +814,7 @@ footer img {
     margin-top: 80px;
   }
   .slider-section h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .card {
     margin: 0;
@@ -839,7 +847,7 @@ footer img {
   }
   /*difference*/
   .difference-text img {
-    width: 600px;
+    width: 500px;
   }
   .difference-text p {
     padding: 12px 0px;
@@ -880,11 +888,9 @@ footer img {
     font-size: 0.8rem;
   }
   .quote {
-    width: 120px;
+    width: 110px;
   }
-  .logo {
-    width: 84%;
-  }
+ 
   .carousel-main {
     margin-top:66px;
   }

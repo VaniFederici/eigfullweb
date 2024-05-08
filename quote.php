@@ -3,13 +3,9 @@
 if (isset($_POST['email']) and $_POST['email']!=""){
 	
 	$nombre=$_POST['firstname'];
-	$apellido=$_POST['lastname'];
-	$city=$_POST['city'];
-	$state=$_POST['state'];
 	$email=$_POST['email'];
-	$phone=$_POST['phone'];
-	$referred=$_POST['referred'];
-	$comments=$_POST['comments'];
+	$phone=$_POST['quotephone'];
+	
 	
 	//-----------------------------------------------------------
 	//ENVIO MAIL 
@@ -25,13 +21,9 @@ if (isset($_POST['email']) and $_POST['email']!=""){
 	
 	
 	Name: '.$nombre.'
-	LastName:'.$apellido.'
-	City:'.$city.'
-	State:'.$state.'
 	Email: '.$email.'
-	Phone: '.$phone.'
-	Referred:'.$referred.'
-	Comments:'.$comments;
+	Phone: '$phone;
+
 	
 	if ( mail($destinatario,$asunto,$cuerpo) ) {
 		echo '<SCRIPT LANGUAGE="javascript">
